@@ -1,0 +1,111 @@
+"""
+File: python_games.py
+Author: Nassy
+
+Description:
+This file contains 3 mini games:
+1. Dice Rolling Game
+2. Number Guessing Game
+3. True/False Quiz Game
+
+Concepts Used:
+- random module
+- loops (while, for)
+- conditionals (if/elif/else)
+- user input
+"""
+
+# ===== GAME 1: DICE ROLLING GAME =====
+
+import random  # Import random module to generate random numbers
+
+print("🎲 Welcome to Roll the Dice!")
+
+while True:
+    # Ask user if they want to roll
+    roll = input("Roll the dice? (yes/no): ").lower()  
+    # .lower() ensures input is lowercase (handles YES, Yes, etc.)
+
+    if roll == "yes":
+        # Generate random number between 1 and 6
+        dice = random.randint(1, 6)
+        print("You rolled:", dice)
+
+    elif roll == "no":
+        print("Thanks for playing!")
+        break  # Exit the loop
+
+    else:
+        print("Type 'yes' or 'no'")
+
+
+# ===== GAME 2: NUMBER GUESSING GAME =====
+
+# Choose a random number between 1 and 10
+secret_number = random.randint(1, 10)
+
+print("\nWelcome to the Number Guessing Game!")
+print("I have chosen a number between 1 and 10.")
+
+# Loop gives player 3 attempts
+for tries in range(3):
+    
+    # Convert input to integer (input is normally string)
+    guess = int(input("Enter your guess: "))
+
+    if guess == secret_number:
+        print("🎉 Congratulations! You guessed it right!")
+        break  # Exit loop if correct
+
+    elif guess < secret_number:
+        print("Too low! Try again.")
+
+    else:
+        print("Too high! Try again.")
+
+# Runs if loop finishes without break
+else:
+    print("Sorry! You ran out of tries. The number was", secret_number)
+
+
+# ===== GAME 3: TRUE/FALSE QUIZ =====
+
+score = 0  # Variable to keep track of score
+
+print("\nWelcome to the True/False Game!")
+
+# Question 1
+answer1 = input("Python is a snake? (True/False): ")
+
+if answer1 == "False":
+    print("Correct!")
+    score += 1  # Increase score
+else:
+    print("Wrong!")
+
+# Question 2
+answer2 = input("5 > 2 ? (True/False): ")
+
+if answer2 == "True":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong!")
+
+# Final score
+print("Your score is:", score)
+
+
+"""
+What I learned:
+- random.randit() generates random numbers
+- input() takes user input as string
+- int() converts string to integer
+- while True creates a loop until break
+- for loop runs a fixed number of times
+- if/elif/else controls decision making
+"""
+
+
+
+
