@@ -1,7 +1,8 @@
 # Python Games 🎮
 
 ## 📌 Description
-A collection of simple Python command-line games including:
+This project containsa collection of simple command-line games built using python.
+It was created to practice core programming concepts and improve problem-solving skills.
 - Number Guessing Game
 - Rock, Paper, Scissors
 - True/False Quiz
