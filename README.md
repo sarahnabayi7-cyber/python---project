@@ -24,6 +24,7 @@ python3 game.py
 - Multiple mini games
 
 ## 🧠 What I Learned
-- Python basics (loops, conditionals)
-- Working with user input
-- Structuring simple projects
+handling user input loops
+random number generation
+game logic design
+
