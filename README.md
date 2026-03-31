@@ -24,7 +24,8 @@ python3 game.py
 - Multiple mini games
 
 ## 🧠 What I Learned
-handling user input loops
-random number generation
-game logic design
+- handling user input loops  
+- random number generation  
+- game logic design  
+
 
