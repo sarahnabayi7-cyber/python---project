@@ -1,0 +1,28 @@
+# Python Games 🎮
+
+## 📌 Description
+A collection of simple Python command-line games including:
+- Number Guessing Game
+- Rock, Paper, Scissors
+- True/False Quiz
+
+## 🚀 How to Run
+1. Make sure you have Python installed
+2. Run a game:
+```bash
+python3 game.py
+```
+## 📂 Project Structure
+- game.py → main game file
+- python_games.py → collection of games
+- qr.py → QR code generator
+
+## 🎯 Features
+- Simple CLI-based interaction
+- Beginner-friendly code
+- Multiple mini games
+
+## 🧠 What I Learned
+- Python basics (loops, conditionals)
+- Working with user input
+- Structuring simple projects
